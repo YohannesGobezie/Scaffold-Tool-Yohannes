@@ -22,5 +22,3 @@ npm run dev
 `netlify init` to connect github repo to netlify\
 `netlify dev` to start a development environment\
 `netlify build` to build static site locally
-
-change
