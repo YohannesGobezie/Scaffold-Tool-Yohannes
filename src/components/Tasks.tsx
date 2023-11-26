@@ -16,7 +16,10 @@ const Tasks = ({task, toggleComplete, deleteTask}) => {
       <div className={style.row}>
         <input onChange={() => toggleComplete(task)} type='checkbox' checked={task.completed ? 'checked' : ''} />
         <h1 onClick={() => toggleComplete(task)} className={task.completed ? style.text_complete : style.text}>{task.title}</h1>
-        <p>{task.desc}</p>
+        <p className={task.completed ? style.text_complete : style.text}>{task.desc}</p>
+        <p className={task.completed ? style.text_complete : style.text}>{task.date}</p>
+        <p className={task.completed ? style.text_complete : style.text}>{task.priority}</p>
+        <p className={task.completed ? style.text_complete : style.text}>{task.status}</p>
       </div>
       <button onClick={() => deleteTask(task.id)}>{<FaRegTrashAlt />}</button>
     </li>
