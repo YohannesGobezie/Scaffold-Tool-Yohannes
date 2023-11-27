@@ -11,9 +11,9 @@ const style = {
   container: 'bg-slate-100 max-w-[700px] w-full m-auto rounded-md shadow-xl p-4',
   o_heading: 'text-2xl font-bold text-gray-800',
   heading: 'text-3xl font-bold text-center text-gray-800 p-2',
-  form: 'flex justify-between',
-  input: 'border p-2 w-full text-xl',
-  button: 'border p-4 ml-2 bg-purple-500 text-slate-100',
+  form: 'flex-col justify-between items-center',
+  input: 'mt-2 border p-2 w-full text-xl',
+  button: 'mt-2 border p-4 bg-purple-500 text-slate-100',
   count: 'text-center p-2'
 }
 
